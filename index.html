@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -31,9 +31,9 @@
     overflow-x: hidden;
   }
 
-  /* ═══════════════════════════════════════
+  /* -----------------------------------
      PREMIUM LOADER
-  ═══════════════════════════════════════ */
+  ----------------------------------- */
   #loader {
     position: fixed; inset: 0;
     background: #000;
@@ -67,7 +67,7 @@
     pointer-events: auto;
   }
 
-  /* ── STAGE 1: WIREFRAME ── */
+  /* --- STAGE 1: WIREFRAME --- */
   .ld-wire-ui {
     display: flex; gap: 16px; align-items: flex-start;
     width: 100%;
@@ -126,7 +126,7 @@
     50% { border-color: rgba(255,106,0,0.35); }
   }
 
-  /* ── STAGE 2: GLASS ── */
+  /* --- STAGE 2: GLASS --- */
   .ld-glass-ui { display: flex; gap: 14px; width: 100%; }
   .gl-card {
     flex: 1;
@@ -209,7 +209,7 @@
     50% { transform: scale(1.1); box-shadow: 0 0 35px rgba(255,106,0,0.4); }
   }
 
-  /* ── STAGE 3: INTERACTION ── */
+  /* --- STAGE 3: INTERACTION --- */
   .ld-interact-ui { display: flex; flex-direction: column; align-items: center; gap: 14px; width: 100%; }
   .int-card {
     width: 100%;
@@ -301,7 +301,7 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* ── BOTTOM ── */
+  /* --- BOTTOM --- */
   .ld-bottom {
     position: relative; z-index: 2;
     width: 580px;
@@ -363,7 +363,7 @@
     pointer-events: none;
   }
 
-  /* ── VERTICAL BAR ── */
+  /* --- VERTICAL BAR --- */
   .ld-vbar-wrap {
     position: absolute;
     right: 48px; top: 50%;
@@ -907,7 +907,7 @@
     transition: gap 0.2s;
   }
   .project-link:hover { gap: 12px; }
-  .project-link::after { content: '→'; }
+  .project-link::after { content: '\2192'; }
 
   /* FUN SECTION */
   #fun { background: var(--dark); }
@@ -1347,7 +1347,7 @@
 
 <div id="resume-modal" aria-hidden="true">
   <div id="resume-modal-inner">
-    <button id="resume-modal-close" aria-label="Close resume viewer">×</button>
+    <button id="resume-modal-close" aria-label="Close resume viewer">Ã—</button>
     <iframe id="resume-frame" title="Resume Viewer"></iframe>
   </div>
 </div>
@@ -1401,19 +1401,19 @@
     <h2 class="section-title reveal">THE JOURNEY<br>SO FAR</h2>
     <div class="timeline">
       <div class="timeline-item reveal">
-        <div class="tl-date">JUN 2025 – DEC 2025</div>
+        <div class="tl-date">JUN 2025 â€“ DEC 2025</div>
         <div class="tl-company">VYBE LABS <span class="tl-badge">WFH</span></div>
-        <div class="tl-role">UX/UI Designer — Internship</div>
+        <div class="tl-role">UX/UI Designer â€” Internship</div>
         <div class="tl-desc">Worked remotely on product design, redesigned key user flows, and collaborated with dev teams to ship clean, functional interfaces. Got really good at async communication and even better at Figma.</div>
       </div>
       <div class="timeline-item reveal">
-        <div class="tl-date">2025 – PRESENT</div>
+        <div class="tl-date">2025 â€“ PRESENT</div>
         <div class="tl-company">VIZEN <span class="tl-badge">STARTUP</span></div>
-        <div class="tl-role">UX/UI Designer — Part-time</div>
+        <div class="tl-role">UX/UI Designer â€” Part-time</div>
         <div class="tl-desc">Designing products at a fast-moving startup. Zero room for average design. Responsible for end-to-end product design including research, wireframing, prototyping, and handoff to development.</div>
       </div>
       <div class="timeline-item reveal">
-        <div class="tl-date">DEC 2025 – JUL 2026</div>
+        <div class="tl-date">DEC 2025 â€“ JUL 2026</div>
         <div class="tl-company">TECHCADD <span class="tl-badge">WFO</span></div>
         <div class="tl-role">UI/UX Designer</div>
         <div class="tl-desc">Immersed in real-world design workflows. Contributed to client projects, learned rapid prototyping, and sharpened both my visual design and user research skills in an agency-like environment.</div>
@@ -1421,7 +1421,7 @@
       <div class="timeline-item reveal">
         <div class="tl-date">DEC 2025 - JUL 2026</div>
         <div class="tl-company">VIRTUAL ACADEMY AND SYNTEX BY TECHCADD</div>
-        <div class="tl-role">UX/UI DEVELOPER — Teaching</div>
+        <div class="tl-role">UX/UI DEVELOPER â€” Teaching</div>
         <div class="tl-desc">Mentoring aspiring designers online. Teaching Figma, UX fundamentals, and the actual thought process behind great design. Because sharing what you know is the best way to grow yourself too.</div>
       </div>
     </div>
@@ -1453,7 +1453,7 @@
         <div class="skill-pct">90%</div>
       </div>
       <div class="skill-card reveal" data-pct="95">
-        <div class="skill-icon">⚡</div>
+        <div class="skill-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M13 2 4 13h5l-1 9 9-11h-5l1-9z"/></svg></div>
         <div class="skill-name">Figma & Prototyping</div>
         <div class="skill-bar-bg"><div class="skill-bar-fill"></div></div>
         <div class="skill-pct">95%</div>
@@ -1489,7 +1489,7 @@
       <a href="https://www.figma.com/proto/FlYJroERXqXMoFiHAH8py6/portfolio?node-id=88-135&p=f&t=pBewBdEnfPoqoZSx-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=88%3A135&hide-ui=1"
          target="_blank" rel="noopener" class="btn-secondary reveal" style="margin-bottom:4px;display:inline-flex;align-items:center;gap:8px;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M15.332 8.668a3.333 3.333 0 0 0 0-6.663H8.668a3.333 3.333 0 0 0 0 6.663 3.333 3.333 0 0 0 0 6.665 3.333 3.333 0 0 0 0 6.664A3.334 3.334 0 0 0 12 18.664V12a3.333 3.333 0 0 0 3.332-3.332zm0 0a3.333 3.333 0 1 1 0 6.665 3.333 3.333 0 0 1 0-6.665z"/></svg>
-        View Full Portfolio on Figma →
+        View Full Portfolio on Figma â†’
       </a>
     </div>
     <div class="projects-grid">
@@ -1497,16 +1497,16 @@
       <!-- 1. Odd Drops -->
       <div class="project-card reveal">
         <div class="project-thumb">
-          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCAH0Ar8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3GiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKr6jObXT7m4XrFEzj6gE0N2Gld2Keo+IdJ0yXyry9jSXugBZh9QM4qbTdX0/VFY2F1HNt+8o4I+oPNeZ+EdGj8Rajc/b55dqL5jlD8zsx9T+NHkt4c8Zxw28rMsU6Lk9WRsZB/A1xrET0k1oz0Hg6esFL3kr+R6VqGtabpsyw315FDIy7grnkj1/SoYfEuizyCOPU7YsegL4/nXD/E441yD2tR/6E1HiDwhDpuiDUYLqWQjYXSRRjDYHGPrVSrTUpJLREww1Jwi5NpyPSp54reB55nCRIpZmPQAd6yv+Er0L/oJ2/5n/Cud8P3st14B1KOZixt45I1J/u7cgfhmuf8ACHh+HXpLpZ55YvJVSPLA5zn1+lEq8m4qC3FDCwSk6j+FnqVjf2l/GZLK5inUdTGwOPr6VZrybSll8P8AjSO1SUsFuBA5HG9Gx1H4g16zWtKo5p3WqMcRRVJqzumZt9r2l2Fwbe8vYYZQASjHnB6Uy28R6NcyiKHUrZnPAG/Gfzrz/wCII3eKGXPWKMVL4r8Iw6LpyXlvdSSr5gRkkUd+4xWLrzvKy0R0RwtJxjzSacj0q7uYbO3e4uZFjhjGWdugFZn/AAlWhf8AQTt/++j/AIVzcF7Le/DS7adizxKYtxOSQGGP0IrF8I+G4dfiu2muZYTCyquwAg5B65qpVpNpQW6JhhoKMpVHs7HqFne2t9F5tncRzJ/ejYHFM1DUbPTYfOvriOFCcAuep9h3rzTwa82meLhZh8qzvBKB0bGcH8xS+LXl1Xxl9iaQhFkS3j9FBxk/maX1h8l7a3sP6mva8t9LXO8svE+i3s6w29/GZGOFVgUyfbIFaF9e22n25uLyZYYgQC7dMnpXmnjPwzbaFDazWk0rrKxRhIQTkDORgCtbWbuW9+HFtcTMWkLIrMepKsRn9KarSXMpLVCeGpvllB6N2OkHirQicf2nb/8AfVatvcQ3MSy28qSxt0dGBB/GvMvC/hOHXdKlumupYpVkZFAAK8AEZ796f8Ob6W21ae0JJikiZyueNy9/yzShXldcy0Y6mFp2lyPWO53mpa7pmluEvryOJyMhOWbH0HNP0zWtO1XcLC7jlZeSoyGH4HmvMPD9iPE3iGQX8zjzA80hU/MeRwM/X9KmvLRvDXi6BLOSR0jeNlLdSrcFTj8alYifxW90p4On8F/etfyPWKKKK7DzgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACqGvf8gTUP+vaT/0E1fqhr3/IE1D/AK9pP/QTUy+FlQ+JHEfC3/j+v/8Arin8zVHxX/yPTf8AXaD+S1e+Fv8Ax/X/AP1xT+Zqj4r/AOR6b/rtB/Ja4H/Aj6nrr/ep+n+RN8T/APkNw/8AXqP/AEJq6bxj/wAiXJ/uRfzWuZ+J/wDyG4f+vUf+hNXTeMf+RLk/3Iv5rWnWoYv4aPr/AJGF4U/5EnXfo/8A6AKd8Lf+PjUf9yP+bU3wp/yJOu/R/wD0AU74W/8AHxqP+5H/ADapp/FTLq/BV9V+hm6t/wAlD/7fYf8A2SvVa8q1b/kof/b7D/7JXqtbYfeXqc2L+Gn6Hlfj/wD5Gs/9c4q6r4j/APIt/wDbeP8ArXK+P/8Akaz/ANc4q6r4j/8AIt/9t4/61mv+Xhu96H9djD0v/kmmpf8AXR/5rVLwb4jtNBgvFuo5naVlZBGoPQHrk8Vd0v8A5JpqX/XR/wCa1D4D0PT9YgvjfwGRo3UIwcqVyD6GoXNzQ5d7Gj5OSpz7X/yE8FWc+qeJZNWMe2COR5GOf4mzhR+f6VX1D/kon/b9H/7LS+FC+meNBaRuShlkgb/aAzjP4gUmof8AJRP+36P/ANlqV/DXqU7+1l25dDf+KP8AyDrH/r4P/oJqhdf8kvtf+uo/9GNV/wCKP/IOsf8Ar4P/AKCaoXX/ACS+1/66j/0Ya1qfxJ+hjS/g0/8AF/mJ4M8Sabo2izQ3kjibzmdY1QncMDHPTtVT4cwPN4heYL8kcLlj2+YgAfz/ACqx4M8MafrWlvc3hn8xZigCPtGAAfT3ru9N0yx0e1aKyhWKP7znOS3uSetFKnOXK3shV6tOHPGN+Z7nmmp2154R8RLcW4/d7y0LEfK6Hqp/l+Rr0bQtYs9ctBcW3DLxJG33kPof8ahlm0TxLBLYieG6G3cQjfMnYMD2Nee2RuPCvi0QlyVSURv2EkbYwcfiD9RTT9jK61ixNfWYWkrTS+89booorsPNCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKgvoPtVlPb5x5sbJn0yMVPRQ9Rp2dzyHQdVn8KapcJc2pdivlyRFtpBB4INS2JuPFHi5LlYdqmVZJAvIjRcdT+H5mvULvT7K9x9rtIJyOhkjDY/On21rb2kfl2sEcKf3Y0Cj9K5Fh5aJvRHe8ZHWSj7zVjzf4nkf25ACQM2o/9Caqus+L59W0tdOW1jiQ7QzK5YtjoAMeor1Ga0trhg09vDIwGAXQE4/GkisbSFw8VrAjDoyxgH+VOVCTk2pbkwxUFGKcbuJyOj6bNpvgPUftSGOWeKSUo3BUbcDP5Z/GuT8M+IzoD3DJbpP5wUfNJtxjPsfWvYHRZEKOoZWGCpGQRVf+zbD/AJ8rb/vyv+FOVB6crtYUMVG0lON7nmfh+G78ReLF1Bo8IswnlZR8q46DP4AV6tTY40iQJEioo6KowKdWlKnyLe7ZjXre1asrJHlPxCYJ4oY5HEUZwT9ab4g8W3Gv2sdktqkSeYGIRy7MR0HT3r1GaytZ33zW0Mj4xueME/rRFZWsLbobaGNvVIwD+lZPDybdpaM6I4uCjG8buJxzabLpfw4u4bldkzoZHU/w5YYH5YpnwsIMGpYIP7xP5Gu5kjSVCkqK6N1VhkH8KZBbQW4YQQxxBuuxAufyq1RtNNdDJ4m9OUWtW7nl+mkL8RMMQD9ukGCf96pPGltcaV4oGpKn7uR0mjY9Cy4yp/L9a9K+xWvned9mh83O7f5Y3Z9c0+aGK4jMc8aSIequoIP4Gp+r+61frc0+uLnUraWseVeJvEsniMWtvFZmLYxIUNvZ2IxxxW/4gsn034eW9rNgSI0ZcejFskfrXX2ul2Fo/mWtlbwv/ejiAP51YmhinTZNGkif3XUEfrQqEtXJ6sUsVH3VCNknc5T4ZEHQJsHP+kt/Ja6yRBJGyHowINNhgit02QRJGpOcIoAz+FSVtCPLFROarPnm5LqeR6Tf3HhDXLhbi2MhCmJ0J2kjOQwP4frSo9x4r8VpNHBsDuhYKciNFxyT+H5mvU7uwtL0AXdrDPjp5iBsfnS2tpbWabLS3ihU9RGgUH8q5/qz+G+h2PGR+JR961rk9FFFdZ54UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/Z" alt="Odd Drops" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img src="Sunlit Odd Drop Fashion Laptop Mockup.png" alt="Odd Drops" style="width:100%;height:100%;object-fit:cover;display:block;">
           <div class="project-thumb-overlay">
-            <a href="https://www.figma.com/proto/2Jq2qUuvz1wNxAXrw2vLIJ/odd-drop?page-id=0%3A1&node-id=11-101&viewport=641%2C98%2C0.05&t=TRsqqYs0YdSpm7Jm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=79%3A301"
+            <a href="https://www.figma.com/design/2Jq2qUuvz1wNxAXrw2vLIJ/odd-drop?node-id=0-1&t=xIPe1iLkSkPrJEqx-1"
                target="_blank" rel="noopener" style="text-decoration:none;">
-              <span>View on Figma →</span>
+              <span>View on Figma â†’</span>
             </a>
           </div>
         </div>
         <div class="project-info">
-          <div class="project-tag">Branding · Web</div>
+          <div class="project-tag">Branding Â· Web</div>
           <div class="project-title">Odd Drops</div>
           <p class="project-desc">Brand identity and web design for a unique artisan drink brand. Bold typography, warm tones, and an editorial layout that makes the product irresistible.</p>
           <a href="https://www.figma.com/proto/2Jq2qUuvz1wNxAXrw2vLIJ/odd-drop?page-id=0%3A1&node-id=11-101&viewport=641%2C98%2C0.05&t=TRsqqYs0YdSpm7Jm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=79%3A301"
@@ -1517,18 +1517,18 @@
       <!-- 2. Void -->
       <div class="project-card reveal">
         <div class="project-thumb">
-          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCAH0Ar8DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3GiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAr6gt29nKunyxRXOP3bzIXTPuAQcfjXAfDbxlrPimbWrTV2srK+08+WYY4G+U5I3HL8gFSCOO3Nej14z4t0PUNL+KsR0ZdkHim2e2nYZHl8DzWHuFAYe5NAHV2fizU7Xw3Dquq/Zbia/kK2EFvC0W5Mna7Eseow2O2QKva9rer+H7SG5upLG4eTh7dI2Up7g5OQCQDkDqPWqXxEsfs1lpFzaRr5VjKFEC9dvGAB7bfyqPxHcW9x4dmMdxFfapqhjVEgbcQu4MEUdQox+JOTXrYahTcKbavdu/9dElqbwirIi8c+MdV0R/Dj6VLZTQavKsJaW3YlSdvzjDj+90Pp1p/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igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=" alt="Void Fashion" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img src="Minimalist VØID Fashion Laptop Ad.png" alt="Void Fashion" style="width:100%;height:100%;object-fit:cover;display:block;">
           <div class="project-thumb-overlay">
-            <a href="https://www.figma.com/proto/GdKTp9sTXgHY3iYOMEiD0n/void?node-id=60-52&p=f&viewport=418%2C153%2C0.07&t=0Ook2jM4vne9n8VG-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=156%3A56&page-id=0%3A1"
+            <a href="https://www.figma.com/design/GdKTp9sTXgHY3iYOMEiD0n/void?node-id=0-1&t=QbDPTnPFhd46yUTF-1"
                target="_blank" rel="noopener" style="text-decoration:none;">
-              <span>View on Figma →</span>
+              <span>View on Figma â†’</span>
             </a>
           </div>
         </div>
         <div class="project-info">
-          <div class="project-tag">Fashion · E-Commerce</div>
+          <div class="project-tag">Fashion Â· E-Commerce</div>
           <div class="project-title">VOID</div>
-          <p class="project-desc">Minimal luxury fashion brand — "Wear Nothing. Wear Everything." Clean white space, sharp typography, and a UX that lets the clothes speak for themselves.</p>
+          <p class="project-desc">Minimal luxury fashion brand â€” "Wear Nothing. Wear Everything." Clean white space, sharp typography, and a UX that lets the clothes speak for themselves.</p>
           <a href="https://www.figma.com/proto/GdKTp9sTXgHY3iYOMEiD0n/void?node-id=60-52&p=f&viewport=418%2C153%2C0.07&t=0Ook2jM4vne9n8VG-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=156%3A56&page-id=0%3A1"
              target="_blank" rel="noopener" class="project-link">View Project</a>
         </div>
@@ -1541,13 +1541,13 @@
           <div class="project-thumb-overlay">
             <a href="https://www.figma.com/design/8PJFZ5vhtWHArq1s5t396n/virtual-app?node-id=0-1&t=pAarH3DStGTc0b4X-1"
                target="_blank" rel="noopener" style="text-decoration:none;">
-              <span>View on Figma →</span>
+              <span>View on Figma â†’</span>
             </a>
           </div>
         </div>
         <div class="project-info">
-          <div class="project-tag">EdTech · Mobile App</div>
-          <div class="project-title">Virtual Academy — App</div>
+          <div class="project-tag">EdTech Â· Mobile App</div>
+          <div class="project-title">Virtual Academy â€” App</div>
           <p class="project-desc">Mobile app design for an online learning platform. Clean onboarding, intuitive course navigation, and a UI system that scales across the full product.</p>
           <a href="https://www.figma.com/design/8PJFZ5vhtWHArq1s5t396n/virtual-app?node-id=0-1&t=pAarH3DStGTc0b4X-1"
              target="_blank" rel="noopener" class="project-link">View Project</a>
@@ -1561,14 +1561,14 @@
           <div class="project-thumb-overlay">
             <a href="https://www.figma.com/design/2cnQYSoKMb2BmwzRNWnuG7/virtual?node-id=0-1&t=yQyVtadcYBecFIlw-1"
                target="_blank" rel="noopener" style="text-decoration:none;">
-              <span>View on Figma →</span>
+              <span>View on Figma â†’</span>
             </a>
           </div>
         </div>
         <div class="project-info">
-          <div class="project-tag">EdTech · Web</div>
-          <div class="project-title">Virtual Academy — Web</div>
-          <p class="project-desc">Full website design for Virtual Academy — live classes, mentors, real-world projects. Bold hero, feature cards, and a conversion-optimised layout.</p>
+          <div class="project-tag">EdTech Â· Web</div>
+          <div class="project-title">Virtual Academy â€” Web</div>
+          <p class="project-desc">Full website design for Virtual Academy â€” live classes, mentors, real-world projects. Bold hero, feature cards, and a conversion-optimised layout.</p>
           <a href="https://www.figma.com/design/2cnQYSoKMb2BmwzRNWnuG7/virtual?node-id=0-1&t=yQyVtadcYBecFIlw-1"
              target="_blank" rel="noopener" class="project-link">View Project</a>
         </div>
@@ -1577,17 +1577,17 @@
       <!-- 5. ZOYO Experience App -->
       <div class="project-card reveal">
         <div class="project-thumb" style="background:#f2f2f2;">
-          <img src="Zoyo Experience Ticket Mockup.png" alt="ZOYO experience discovery and ticket booking app" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img src="Zoyo Ticket App Smartphone Showcase.png" alt="Zoyo Ticket App Smartphone Showcase" style="width:100%;height:100%;object-fit:cover;display:block;">
           <div class="project-thumb-overlay">
             <a href="https://www.figma.com/design/h2UCCeC97tSTCapR7dtBOf/zoyo?node-id=0-1&t=okjDxmlT6bXOrDXm-1"
                target="_blank" rel="noopener" style="text-decoration:none;">
-              <span>View on Figma →</span>
+              <span>View on Figma â†’</span>
             </a>
           </div>
         </div>
         <div class="project-info">
-          <div class="project-tag">Events · Entertainment · Lifestyle App</div>
-          <div class="project-title">ZOYO — Experience Discovery</div>
+          <div class="project-tag">Events Â· Entertainment Â· Lifestyle App</div>
+          <div class="project-title">ZOYO â€” Experience Discovery</div>
           <p class="project-desc">An online ticket-booking app that brings events, entertainment, shopping, and lifestyle experiences together. ZOYO helps users discover nearby activities, book tickets, and find curated offers in one engaging place.</p>
            <a href="https://www.figma.com/design/h2UCCeC97tSTCapR7dtBOf/zoyo?node-id=0-1&t=okjDxmlT6bXOrDXm-1"
              target="_blank" rel="noopener" class="project-link">View project</a>
@@ -1605,14 +1605,14 @@
           <div class="project-thumb-overlay">
             <a href="https://www.figma.com/design/bIH7xR0Hg7LSbkksH1SmQW/coffee-app-brewnest?node-id=73-90&t=W3Pkgg2kuwD5fge4-1"
                target="_blank" rel="noopener" style="text-decoration:none;">
-              <span>View on Figma →</span>
+              <span>View on Figma â†’</span>
             </a>
           </div>
         </div>
         <div class="project-info">
-          <div class="project-tag">F&B · Mobile App</div>
-          <div class="project-title">Brewnest — Coffee App</div>
-          <p class="project-desc">Mobile app for a specialty coffee brand. Warm, rich visuals with a smooth ordering flow — designed to make every cup feel like an experience.</p>
+          <div class="project-tag">F&B Â· Mobile App</div>
+          <div class="project-title">Brewnest â€” Coffee App</div>
+          <p class="project-desc">Mobile app for a specialty coffee brand. Warm, rich visuals with a smooth ordering flow â€” designed to make every cup feel like an experience.</p>
           <a href="https://www.figma.com/design/bIH7xR0Hg7LSbkksH1SmQW/coffee-app-brewnest?node-id=73-90&t=W3Pkgg2kuwD5fge4-1"
              target="_blank" rel="noopener" class="project-link">View Project</a>
         </div>
@@ -1667,7 +1667,7 @@
         <div class="fun-emoji"><svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30"><path d="M18.5 3H6c-1.1 0-2 .9-2 2v5.71c0 3.83 2.95 7.18 6.78 7.29 3.96.12 7.22-3.06 7.22-7V5c0-1.1-.9-2-2-2zm0 7c0 2.76-2.24 5-5 5s-5-2.24-5-5V5h10v5zm-2-2h-6V7h6v1zm2 11H6c-1.1 0-2 .9-2 2h16c0-1.1-.9-2-2-2z"/></svg></div>
         <div class="fun-text">
           <strong>Caffeinate and iterate</strong>
-          Coffee → ideas → Figma → more coffee → better ideas. It's a system and it works.
+          Coffee â†’ ideas â†’ Figma â†’ more coffee â†’ better ideas. It's a system and it works.
         </div>
       </div>
     </div>
@@ -1681,7 +1681,7 @@
     <h2 class="contact-big reveal">
       LET'S BUILD<br>SOMETHING<br><span>CRAZY</span>
     </h2>
-    <p class="contact-sub reveal">Open to freelance projects, full-time roles, and interesting collaborations.<br>If you have something cool brewing — let's talk.</p>
+    <p class="contact-sub reveal">Open to freelance projects, full-time roles, and interesting collaborations.<br>If you have something cool brewing â€” let's talk.</p>
     <form class="contact-form reveal" id="contactForm" onsubmit="sendMail(event)">
       <div class="form-row">
         <div class="form-group">
@@ -1695,7 +1695,7 @@
       </div>
       <div class="form-group">
         <label class="form-label">Project / Message</label>
-        <textarea class="form-textarea" id="senderMsg" placeholder="Tell me about the project, the vibe, the budget — all of it" required></textarea>
+        <textarea class="form-textarea" id="senderMsg" placeholder="Tell me about the project, the vibe, the budget â€” all of it" required></textarea>
       </div>
       <button type="submit" class="btn-primary" id="submitBtn" style="width:100%; text-align:center; border:none; cursor:pointer; padding:18px;">
         Send Message →
@@ -1735,7 +1735,7 @@ document.querySelectorAll('a, button, .project-card, .skill-card, .stat-card, .f
   el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
 });
 
-// ─── PREMIUM LOADER ───────────────────────────────────────
+// â”€â”€â”€ PREMIUM LOADER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const loader = document.getElementById('loader');
 const ldLabel = document.getElementById('ld-label');
 const ldProgress = document.getElementById('ld-progress');
@@ -1822,13 +1822,13 @@ const loaderTimer = setInterval(()=>{
   }
 }, 35);
 
-// ─── NAV SCROLL ───────────────────────────────────────────
+// â”€â”€â”€ NAV SCROLL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 60);
 });
 
-// ─── HERO CANVAS (particles + glow) ───────────────────────
+// â”€â”€â”€ HERO CANVAS (particles + glow) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const heroCanvas = document.getElementById('hero-canvas');
 const hctx = heroCanvas.getContext('2d');
 let HW, HH;
@@ -1876,7 +1876,7 @@ drawHero();
 
 // Project canvases replaced with real images
 
-// ─── REVEAL ON SCROLL ─────────────────────────────────────
+// â”€â”€â”€ REVEAL ON SCROLL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const reveals = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach((e, i) => {
@@ -1896,7 +1896,7 @@ const revealObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 reveals.forEach(r => revealObserver.observe(r));
 
-// ─── SKILL CARD MOUSE GLOW ────────────────────────────────
+// â”€â”€â”€ SKILL CARD MOUSE GLOW â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 document.querySelectorAll('.skill-card').forEach(card => {
   card.addEventListener('mousemove', e => {
     const rect = card.getBoundingClientRect();
@@ -1907,14 +1907,14 @@ document.querySelectorAll('.skill-card').forEach(card => {
   });
 });
 
-// ─── PARALLAX ─────────────────────────────────────────────
+// â”€â”€â”€ PARALLAX â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 window.addEventListener('scroll', () => {
   const sy = window.scrollY;
   document.querySelector('.hero-content').style.transform = `translateY(${sy * 0.18}px)`;
   document.querySelector('.hero-grid-overlay').style.transform = `translateY(${sy * 0.08}px)`;
 });
 
-// ─── CONTACT FORM → MAILTO ────────────────────────────────────────────────
+// â”€â”€â”€ CONTACT FORM â†’ MAILTO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function sendMail(e) {
   e.preventDefault();
   const name = document.getElementById('senderName').value.trim();
@@ -1929,14 +1929,14 @@ function sendMail(e) {
   );
   const mailto = 'mailto:aryasahil479@gmail.com?subject=' + subject + '&body=' + body;
   window.location.href = mailto;
-  btn.textContent = 'Opening Mail Client... ✓';
+  btn.textContent = 'Opening Mail Client... âœ“';
   btn.style.background = '#1a1a1a';
   btn.style.color = 'var(--neon)';
   status.style.display = 'block';
   status.style.color = 'var(--neon)';
   status.textContent = 'Your mail client will open with the message pre-filled. Send it from there!';
   setTimeout(() => {
-    btn.textContent = 'Send Message →';
+    btn.textContent = 'Send Message â†’';
     btn.style.background = '';
     btn.style.color = '';
     status.style.display = 'none';
@@ -1944,7 +1944,7 @@ function sendMail(e) {
 }
 
 
-// ─── CV VIEWER ──────────────────────────────────
+// â”€â”€â”€ CV VIEWER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const CV_DATA = "sahil resume (1).pdf";
 function openResumeViewer() {
   const resumeModal = document.getElementById('resume-modal');
@@ -1975,3 +1975,4 @@ resumeModalOverlay?.addEventListener('click', (event) => {
 </script>
 </body>
 </html>
+
